@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d6c8b"
+    tools:context="com.android.shamim.taketour.AddGeofencing">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="3dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintBottom_toTopOf="@+id/mainLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+        <LinearLayout
+            android:id="@+id/selectonarea"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fenceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Geofencing Name"
+                android:textColor="#777"
+                android:background="#fff"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:textSize="16sp" />
+            <Button
+                android:layout_width="3dp"
+                android:paddingLeft="5dp"
+                android:layout_height="50dp"
+                android:background="#0d6c8b"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/rarius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="area in meter"
+                android:paddingLeft="5dp"
+                android:textColor="#777"
+                android:background="#fff"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/savenow"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#164778"
+                android:onClick="createFencing"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Add"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="3dp" android:orientation="vertical" android:background="#0d6c8b"
+    android:layout_below="@+id/selectonarea" android:id="@+id/bottommargin"></LinearLayout>
+        <FrameLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/bottommargin">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:background="#000000"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="50dp"
+                android:paddingBottom="12dp"
+                android:paddingTop="10dp"
+                android:alpha="0.8"
+                android:textSize="13sp"
+                android:text="Long click on the map to select geofencing area"
+                android:gravity="left|bottom"
+                android:foregroundGravity="left|bottom"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+
+        </FrameLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

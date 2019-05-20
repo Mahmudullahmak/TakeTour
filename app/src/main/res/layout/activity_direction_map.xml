@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.shamim.taketour.DirectionMap">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp" >
+
+        <FrameLayout
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        <Button
+            android:id="@+id/btnInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show instructions"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:onClick="showInstructions"
+            android:textColor="#FFFFFF"
+            android:background="#295887"
+
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_gravity="left|top"
+            android:enabled="false"/>
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next Route"
+            android:textSize="15sp"
+
+            android:onClick="nextRoute"
+            android:textColor="#FFFFFF"
+            android:background="#295887"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="10dp"
+
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|top"
+            android:enabled="false"/>
+        <Button
+            android:id="@+id/btngetdirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Direction"
+            android:textSize="16sp"
+            android:onClick="getmyDirections"
+            android:textColor="#FFFFFF"
+            android:background="#295887"
+
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="left|bottom" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Long click on map to select starting point and destination"
+                android:alpha="0.7"
+                android:clickable="false"
+                android:layout_marginBottom="50dp"
+                android:layout_marginRight="60dp"
+
+
+                android:background="#000"
+                android:layout_gravity="left|bottom" />
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

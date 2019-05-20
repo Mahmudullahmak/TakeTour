@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "529082910921",
+    "firebase_url": "https://tourbuddy-df876.firebaseio.com",
+    "project_id": "tourbuddy-df876",
+    "storage_bucket": "tourbuddy-df876.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529082910921:android:546a0f6157daad2d",
+        "android_client_info": {
+          "package_name": "com.android.shamim.taketour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529082910921-7tj1r7apfnfdrus4uqaceblqjfvhkf79.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.shamim.taketour",
+            "certificate_hash": "d0b96ea5b0c770ca046fd26b8938c9794241f7a7"
+          }
+        },
+        {
+          "client_id": "529082910921-3h7fbeasom6l0c19ntg24aqh6quci3rd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASKe6FvGqip5lZ_DFShe5yQY-hLstv9_k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529082910921-3h7fbeasom6l0c19ntg24aqh6quci3rd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

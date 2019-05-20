@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:layout_marginBottom="1dp"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/lpname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"     />
+    <TextView
+        android:id="@+id/lpaddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_gravity="left"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/friendname"
+
+        />
+
+</LinearLayout>
